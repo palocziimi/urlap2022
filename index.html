@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="">
+        <div class="doboz">
+
+            <label for="nev">Megrendelő neve: </label>
+            <input type="text" name="nev" id="nev" onfocus="beKatt(this)" onblur="kiKatt(this)"><br>
+
+            <label for="cim">Megrendelő címe: </label>
+            <input type="text" name="cim" id="cim" onfocus="beKatt(this)" onblur="kiKatt(this)"><br>
+            
+            <label for="tel">Megrendelő telefonszáma: </label>
+            <input type="text" name="tel" id="tel" value="+36 " onfocus="beKatt(this)" onblur="kiKatt(this)"><br>
+
+            <input type="button" value="Elküld" onclick="raKatt()">
+
+        </div>
+        <div class="doboz">
+
+            <h1>Visszaigazolás!</h1>
+            <p>Név: <span id="e-nev">?</span></p>
+            <p>Cím: <span id="e-cim">?</span></p>
+            <p>Telefon: <span id="e-tel">?</span></p>
+
+        </div>
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
